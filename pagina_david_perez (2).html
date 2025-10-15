@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Perez - Colección Limitada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #ffffff;
+      --accent: #0f0f0f;
+      --muted: #6b6b6b;
+      --text: #111111;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+
+    body {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 60px 0;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 800px;
+      background: var(--card);
+      border-radius: 24px;
+      padding: 60px 70px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.05);
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      font-weight: 900;
+      margin: 0;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+
+    .collection-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .edition {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .divider {
+      width: 70px;
+      height: 2px;
+      background: var(--accent);
+      margin: 30px auto;
+      border-radius: 999px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .section {
+      text-align: left;
+      margin-top: 30px;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .section li {
+      background: #fafafa;
+      padding: 14px 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.05);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+      transition: all 0.25s ease;
+    }
+
+    .section li:hover {
+      background: #f4f4f4;
+      transform: translateY(-2px);
+    }
+
+    .signature {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-style: italic;
+      color: var(--accent);
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h2 class="collection-name">Colección: Renaissance de Dieu</h2>
+    <h1 class="name">David Perez</h1>
+    <p class="edition">Pieza Nº <strong>1</strong> de <strong>50</strong></p>
+    <p class="date">Mes de fabricación: Octubre 2025</p>
+
+    <div class="divider"></div>
+
+    <p class="subtitle">
+      Una creación exclusiva que combina la elegancia atemporal con la precisión contemporánea.
+      Esta prenda representa la esencia del lujo moderno: limitada, auténtica y con identidad propia.
+    </p>
+
+    <div class="section">
+      <h3>2. SYN Passport (Identidad Digital de la Prenda)</h3>
+      <ul>
+        <li><strong>Fecha y lugar de fabricación:</strong> Colombia, Santander – 7 de octubre de 2025</li>
+        <li><strong>Diseñador y materiales:</strong> Diseñada por NUON Studio. Materiales: algodón orgánico de la más alta calidad, microfibra técnica premium y acabados hechos a mano. Nada reciclado.</li>
+        <li><strong>Certificado de autenticidad</strong></li>
+        <li><strong>Registro de propiedad</strong></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>3. SYN App (Ecosistema)</h3>
+      <ul>
+        <li><strong>Ver tu colección completa</strong><br><span>Accede a todas tus prendas registradas digitalmente.</span></li>
+        <li><strong>Participar en drops o eventos exclusivos</strong><br><span>Desbloquea experiencias únicas solo para miembros NUON.</span></li>
+        <li><strong>Transferir la propiedad digital</strong><br><span>Vende o regala tu prenda como un NFT físico, seguro y trazable.</span></li>
+        <li><strong>Ganar puntos SYN Energy</strong><br><span>Acumula recompensas por usar la prenda, asistir a eventos o compartirla.</span></li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+    <p class="signature">– NUON</p>
+  </main>
+</body>
+</html>
+
